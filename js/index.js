@@ -1,16 +1,22 @@
+
 const fields = document.querySelectorAll(".textb input");
 const btn = document.querySelector(".btn");
+const password = document.querySelectorAll(".show-password");
 
-function check(){
-    if(fields[0].value != "" && fields[1].value != ""){
-        btn.disabled = false;
-    }else {
-        btn.disabled = true;
-    }
+function check() {
+    for (var i = 0; i < fields.length; i++) {
+        if (fields[i].value != "") {
+            btn.disabled = false;
+        } else {
+            btn.disabled = true;
+        }
+    } 
 }
 
-fields[0].addEventListener("keyup", check);
-fields[1].addEventListener("keyup", check);
+for (var i = 0; i < fields.length; i++) {
+    fields[i].addEventListener("keyup", check);
+}
+
 
 document.querySelector(".show-password").addEventListener("click" , 
 function(){
