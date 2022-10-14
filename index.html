@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,52 @@
     <script src="https://kit.fontawesome.com/fc74eb7a1b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
-    
-   <form action="#" class="form">
-    <h1>Sign In</h1>
-    <div class="textb">
-        <input type="text" id required>
-        <div class="placeholder">Username</div>
-    </div>
 
-    <div class="textb">
-        <input type="password" required>
-        <div class="placeholder">Password</div>
-        <div class="show-password fas fa-eye-slash"></div>
-    </div>
+    <form action="#" class="form">
+        <h1>Sign In</h1>
+        <div class="textb">
+            <input type="text" id required>
+            <div class="placeholder">Username</div>
+        </div>
 
-    <div class="checkbox">
-        <input type="checkbox">
-        <div class="fas fa-check"></div>
-        Stay signed in
-    </div>
+        <div class="textb">
+            <input type="password" required>
+            <div class="placeholder">Password</div>
+            <div class="show-password fas fa-eye-slash"></div>
+        </div>
 
-    <button class="btn fas fa-arrow-right" disabled></button>
+        <div class="checkbox">
+            <input type="checkbox">
+            <div class="fas fa-check"></div>
+            Stay signed in
+        </div>
+
+        <button class="btn fas fa-arrow-right" disabled></button>
         <a href="./pages/create.html">Create account</a>
-   </form>
+    </form>
 
     <script src="./js/index.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyATKtMVv650kWl0EQJbkLNCFgrpfj4Yk44",
+        authDomain: "auth-system-52166.firebaseapp.com",
+        projectId: "auth-system-52166",
+        storageBucket: "auth-system-52166.appspot.com",
+        messagingSenderId: "672277667953",
+        appId: "1:672277667953:web:73aa0d77d22db890717bd0"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
 </body>
+
 </html>
